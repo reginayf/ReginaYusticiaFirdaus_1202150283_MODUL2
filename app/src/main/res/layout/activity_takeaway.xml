@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="reginayf.regina_1202150283_modul2.TakeawayActivity">
+
+
+    <TextView
+        android:id="@+id/t_identitas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Identitas Pemesan"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp"/>
+
+    <EditText
+        android:id="@+id/t_nama"
+        android:inputType="textPersonName"
+        android:text="Nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/t_identitas"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp" />
+
+    <EditText
+        android:id="@+id/t_telepon"
+        android:inputType="textPersonName"
+        android:text="Telepon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/t_nama"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp"/>
+
+    <EditText
+        android:id="@+id/t_alamat"
+        android:inputType="textPersonName"
+        android:text="Alamat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/t_telepon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp"/>
+
+    <EditText
+        android:id="@+id/t_catatan"
+        android:text="Catatan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/t_alamat"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp" />
+
+    <Button
+        android:id="@+id/btn_pilih"
+        android:text="Pilih Pesanan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/t_catatan"
+        android:layout_centerHorizontal="true"
+        android:inputType="textPersonName"
+        android:layout_marginTop="37dp"/>
+</RelativeLayout>

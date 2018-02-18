@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="reginayf.regina_1202150283_modul2.DineinActivity">
+
+    <TextView
+        android:id="@+id/t_customer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Detail Customer"
+        android:layout_marginTop="37dp"/>
+
+    <EditText
+        android:id="@+id/t_nama2"
+        android:inputType="textPersonName"
+        android:text="Nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/t_customer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp" />
+
+
+    <Spinner
+        android:id="@+id/spinner_meja"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/button"
+        android:layout_alignRight="@+id/button"
+        android:layout_below="@+id/t_nama2"
+        android:layout_marginTop="36dp"
+        tools:layout_editor_absoluteX="172dp" />
+        <!--tools:layout_editor_absoluteY="140dp"-->
+
+    <TextView
+        android:id="@+id/t_meja"
+        android:layout_width="69dp"
+        android:layout_height="25dp"
+        android:layout_alignLeft="@+id/button"
+        android:layout_alignStart="@+id/button"
+        android:layout_alignTop="@+id/spinner_meja"
+        android:text="No Meja :"
+        tools:layout_editor_absoluteX="82dp" />
+        <!--tools:layout_editor_absoluteY="140dp"-->
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pilih Pesanan"
+        android:layout_below="@+id/t_meja"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp"/>
+</RelativeLayout>

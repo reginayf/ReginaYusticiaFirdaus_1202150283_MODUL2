@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="reginayf.regina_1202150283_modul2.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pilih Menu :"
+        android:layout_above="@+id/radio"
+        android:layout_centerHorizontal="true"/>
+        <!--app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--app:layout_constraintRight_toRightOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="parent" -->
+        <!--android:layout_gravity="center"-->
+
+<RadioGroup
+    android:id="@+id/radio"
+    android:layout_centerInParent="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <!--android:layout_weight="2"-->
+    <!--android:layout_margin="3dp"-->
+    <!--android:orientation="vertical"-->
+    <RadioButton
+        android:id="@+id/dinein"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dine In"
+        android:layout_centerHorizontal="true"/>
+    <RadioButton
+        android:id="@+id/takeaway"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Take Away"
+        android:layout_centerHorizontal="true" />
+</RadioGroup>
+    <TextView
+        android:id="@+id/text_view_selected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radio"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:text="Your selection: "
+        android:textSize="20sp" />
+    <Button
+        android:id="@+id/btn_pesan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view_selected"
+        android:text="Pesan Sekarang"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
